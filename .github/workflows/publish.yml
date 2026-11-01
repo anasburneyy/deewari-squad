@@ -22,7 +22,7 @@ jobs:
       - name: Unpack compiled release
         run: |
           mkdir -p _site
-          unzip -q DeewariSquad-site.zip -d _site
+          unzip -oq DeewariSquad-site.zip -d _site
           test -f _site/index.html
           test -f _site/download/BurneyDeewariSquad.apk
           test -f _site/download/version.json
